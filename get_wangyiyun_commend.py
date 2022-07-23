@@ -20,7 +20,7 @@ def get_music_content(idcode,switch):
         typea = "song"
     url = f"https://music.163.com/{typea}?id={idcode}"
     headers = {
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36',
         'referer': 'https://music.163.com/'
     }
 
@@ -91,7 +91,7 @@ def get_comment(idcode,pagesize,page,switch,cursor=-1):
 
     url = "https://music.163.com/weapi/comment/resource/comments/get?csrf_token="
     headers = {
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36',
         'referer': f'https://music.163.com/{switch}?id={idcode}',
     }
 
